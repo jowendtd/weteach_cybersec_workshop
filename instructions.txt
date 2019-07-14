@@ -1,3 +1,26 @@
 ##### HASHCAT #####
 
-wget -q https://github.com/jowendtd/weteach_cybersec_workshop/blob/master/hashcat/target_hashes.txt
+cd Desktop
+
+# echo -n "Password" | md5sum | tr -d " -" >> target_hashes.txt
+# echo -n "HELLO" | md5sum | tr -d " -" >> target_hashes.txt
+# echo -n "MYSECRET" | md5sum | tr -d " -" >> target_hashes.txt
+# echo -n "Test1234" | md5sum | tr -d " -" >> target_hashes.txt
+# echo -n "P455w0rd" | md5sum | tr -d " -" >> target_hashes.txt
+# echo -n "GuessMe" | md5sum | tr -d " -" >> target_hashes.txt
+# echo -n "S3CuReP455Word" | md5sum | tr -d " -" >> target_hashes.txt
+
+wget -q https://raw.githubusercontent.com/jowendtd/weteach_cybersec_workshop/master/hashcat/target_hashes.txt
+
+cat target_hashes.txt
+
+hashcat -h
+
+locate wordlists
+
+wget https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
+
+hashcat --force -m 0 -a 0 -o cracked.txt target_hashes.txt rockyou.txt
+
+cat cracked.txt
+
