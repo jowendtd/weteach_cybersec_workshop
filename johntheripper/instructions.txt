@@ -1,0 +1,15 @@
+sudo su
+useradd -m john -G sudo -s /bin/bash
+passwd john
+
+# password
+
+unshadow
+
+unshadow /etc/passwd /etc/shadow > /root/johns_passwd
+
+ls -ltrah /usr/share/john/password.lst
+
+john --wordlist=/usr/share/john/password.lst /root/johns_passwd
+
+john --show /root/johns_passwd
