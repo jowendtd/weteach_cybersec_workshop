@@ -1,0 +1,3 @@
+##### HASHCAT #####
+
+wget -q https://github.com/jowendtd/weteach_cybersec_workshop/blob/master/hashcat/target_hashes.txt
