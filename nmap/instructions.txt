@@ -1,0 +1,13 @@
+ifconfig
+
+ping target.example.com
+
+nmap
+
+nmap -sV -p 1-65535 10.1.58.0/24
+
+sudo su
+
+zenmap
+
+# 10.1.58.36
