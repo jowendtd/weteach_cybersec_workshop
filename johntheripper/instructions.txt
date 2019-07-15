@@ -1,3 +1,5 @@
+##### John the Ripper #####
+
 sudo su
 useradd -m john -G sudo -s /bin/bash
 passwd john
