@@ -6,5 +6,8 @@ iwconfig
 
 sudo airmon-ng start wlan0
 
-kismet -c wlan0mon
+#####
 
+kismet
+
+http://localhost:2501/
